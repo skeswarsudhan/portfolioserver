@@ -217,8 +217,8 @@ def get_chat_history():
     chat_history = retrieve_chat_history(conversation_id)
     return jsonify({"conversation_id": conversation_id, "chat_history": chat_history})
 
-from waitress import serve
+
 
 if __name__ == "__main__":
-    serve(app, host="0.0.0.0", port=8080)
+    app.run()
 
