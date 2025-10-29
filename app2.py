@@ -14,7 +14,7 @@ load_dotenv()
 app = Flask(__name__)
 
 # Allow requests from frontend
-CORS(app, origins=["https://portfoliofrontend-mauve.vercel.app", "http://localhost:3000"])  
+CORS(app, origins=["https://portfoliofrontend-mauve.vercel.app", "http://localhost:3000", "https://skeswarsudhan.vercel.app"])  
 
 # Environment variables
 groq_api_key = os.getenv('GROQ_API_KEY')
